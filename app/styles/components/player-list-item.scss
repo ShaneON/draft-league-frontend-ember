@@ -6,10 +6,18 @@
     background-color: #FFF;
     outline: none;
     border: none;
-    height: 25px;
+    height: 35px;
     width: 100%;
     display: flex;
     flex-direction: row;
+  }
+
+  &__team {
+    width: 150px;
+  }
+
+  &__points {
+    width: 150px;
   }
 
   &__name {
@@ -17,6 +25,6 @@
   }
 
   &__pos {
-    width: 100px;
+    width: 150px;
   }
 }

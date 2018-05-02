@@ -16,52 +16,62 @@ export default Ember.Route.extend({
       {
         "name": "Diego Costa",
         "pos": "ST",
-        "team": "CHE"
+        "team": "CHE",
+        "pointsLastYear": "202"
       },
       {
         "name": "Eden Hazard",
         "pos": "MID",
-        "team": "CHE"
+        "team": "CHE",
+        "pointsLastYear": "100"
       },
       {
         "name": "Romelu Lukaku",
         "pos": "ST",
-        "team": "MUN"
+        "team": "MUN",
+        "pointsLastYear": "252"
       },
       {
         "name": "Sergio Aguero",
         "pos": "ST",
-        "team": "MC"
+        "team": "MC",
+        "pointsLastYear": "232"
       },
       {
         "name": "Petr Cech",
         "pos": "GK",
-        "team": "ARS"
+        "team": "ARS",
+        "pointsLastYear": "202"
       },
       {
         "name": "Alvaro Morata",
         "pos": "ST",
-        "team": "CHE"
+        "team": "CHE",
+        "pointsLastYear": "202"
       },
       {
         "name": "Ander Herrera",
         "pos": "MID",
-        "team": "MUN"
+        "team": "MUN",
+        "pointsLastYear": "130"
       },
       {
         "name": "Jamie Vardy",
         "pos": "ST",
-        "team": "LEI"
+        "team": "LEI",
+        "pointsLastYear": "267"
       },
       {
         "name": "Gabriel Jesus",
         "pos": "ST",
-        "team": "MC"
+        "team": "MC",
+        "pointsLastYear": "120"
       },
       {
         "name": "Ederson",
         "pos": "GK",
-        "team": "MC"
+        "team": "MC",
+        "pointsLastYear": "134"
       },
     ]
   }
