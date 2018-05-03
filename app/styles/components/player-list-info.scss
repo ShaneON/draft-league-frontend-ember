@@ -10,18 +10,26 @@
 
 
   &__team {
+    display: flex;
+    justify-content: center;
     width: 150px;
   }
 
   &__points {
+    display: flex;
+    justify-content: center;
     width: 150px;
   }
 
   &__name {
+    display: flex;
+    justify-content: center;
     width: 150px;
   }
 
   &__pos {
+    display: flex;
+    justify-content: center;
     width: 150px;
   }
 }

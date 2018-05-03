@@ -1,4 +1,7 @@
 .player-list {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 
   &__title {
     display: flex;
@@ -6,9 +9,8 @@
   }
 
   &__content {
-    height: 300px;
-    width: 400px;
-    background-color: #BAC9E6;
+    height: 400px;
+    background-color: #d2d6d1;
     overflow: auto;
     display: flex;
     flex-direction: column;
