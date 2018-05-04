@@ -1,5 +1,9 @@
 # draft-league-frontend-ember
 
+This is the front end of my draft league application that I'm currently building with Ember.js.
+The app will allow members of the league to draft a team, pick their teams each week, transfer players
+between each other, check leaderboard/scores and more...
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
