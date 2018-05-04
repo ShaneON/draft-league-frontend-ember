@@ -1,11 +1,13 @@
-<h2 class="player-list__title">
-  Player list
-</h2>
-{{player-list-info}}
-<div class="player-list__content">
-  {{#each players as |player|}}
-    {{player-list-item
-      player=player
-      addPlayer=addPlayer}}
-  {{/each}}
+<div local-class="player-list">
+  <h2 local-class="title">
+    Player list
+  </h2>
+  {{player-list-info}}
+  <div local-class="content">
+    {{#each players as |player|}}
+      {{player-list-item
+        player=player
+        addPlayer=addPlayer}}
+    {{/each}}
+  </div>
 </div>
