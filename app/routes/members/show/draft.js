@@ -5,13 +5,24 @@ export default Ember.Route.extend({
 
   actions: {
     addPlayer(player) {
-      const member = this.modelFor('members.show');
-      member.get('players').pushObject(player);
-      member.save();
+      // const member = this.modelFor('members.show');
+      // member.get('players').pushObject(player);
+      // member.save();
+      console.log('Add player: ' + player.get('lastName'));
+    },
+
+    removePlayer(player) {
+      // const member = this.modelFor('members.show');
+      // member.get('players').pushObject(player);
+      // member.save();
+      console.log('Remove player: ' + player.lastName); //=========fake data
     }
   },
 
   model() {
-    return this.get('store').findAll('player');
+    return Ember.RSVP.hash({
+      players: this.get('store').findAll('player'),
+      member: this.modelFor('member.show')
+    });
   }
 });

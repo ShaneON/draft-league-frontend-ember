@@ -1,12 +1,15 @@
-{{log player}}
 <div local-class="confirm-selection">
   <h1 local-class="message">
-    Are you sure you want to add {{player.firstName}} {{player.lastName}} to your team?
+    <!-- Are you sure you want to add <strong> {{player.firstName}} {{player.lastName}} </strong> to your team? -->
+    {{yield (hash
+      player=player)}}
   </h1>
-  <button local-class="add" onclick={{action addPlayer player}}>
-    Add player
-  </button>
-  <button local-class="cancel" onclick={{action cancel}}>
-    Cancel
-  </button>
+  <div local-class="footer">
+    <button local-class="cancel" onclick={{action cancel}}>
+      Cancel
+    </button>
+    <button local-class="confirm" onclick={{action confirm player}}>
+      {{confirmButtonText}}
+    </button>
+  </div>
 </div>

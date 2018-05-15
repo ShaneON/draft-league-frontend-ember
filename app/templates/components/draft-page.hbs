@@ -3,15 +3,34 @@
     title=navTitle}}
   {{draft-content
     players=players
-    playerSelected=(action "showAddPlayerModal")}}
+    addPlayer=(action "showAddPlayerModal")
+    removePlayer=(action "showRemovePlayerModal")}}
   {{!page-footer}}
 </div>
 {{#if isShowingAddPlayerModal}}
   {{#modal-dialog
     clickOutsideToClose=true}}
-    {{confirm-selection
-      player=selectedPlayer
+    {{#confirm-selection
+      player=selectedPlayerToAdd
+      confirmButtonText="Add player"
       cancel=(action (mut isShowingAddPlayerModal) false)
-      addPlayer=(queue (action addPlayer) (action (mut isShowingAddPlayerModal) false))}}
+      confirm=(queue (action addPlayer) (action (mut isShowingAddPlayerModal) false))
+      as |confirm|}}
+      Are you sure you want to add <strong> {{confirm.player.firstName}} {{confirm.player.lastName}} </strong> to your team?
+    {{/confirm-selection}}
+  {{/modal-dialog}}
+{{/if}}
+
+{{#if isShowingRemovePlayerModal}}
+  {{#modal-dialog
+    clickOutsideToClose=true}}
+    {{#confirm-selection
+      player=selectedPlayerToRemove
+      confirmButtonText="Remove player"
+      cancel=(action (mut isShowingRemovePlayerModal) false)
+      confirm=(queue (action removePlayer) (action (mut isShowingRemovePlayerModal) false))
+      as |confirm|}}
+      Are you sure you want to remove <strong>{{confirm.player.firstName}} {{confirm.player.lastName}}</strong> from your team?
+    {{/confirm-selection}}
   {{/modal-dialog}}
 {{/if}}

@@ -1,6 +1,6 @@
-<div local-class="player-list">
+<div local-class="member-squad">
   <h2 local-class="title">
-    Player list
+    Squad
   </h2>
   <div local-class="headings">
     {{#each listTitles as |title|}}
@@ -9,8 +9,8 @@
     {{/each}}
   </div>
   <div local-class="content">
-    {{#each players as |player|}}
-      {{player-list-item
+    {{#each squad as |player|}}
+      {{squad-item
         player=player
         playerSelected=playerSelected}}
     {{/each}}
