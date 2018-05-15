@@ -1,8 +1,8 @@
 <div local-class="player-list-item">
-  <button local-class="button" onclick={{action addPlayer player}}>
-    <div local-class="name">{{player.first_name}} {{player.second_name}}</div>
+  <button local-class="button" onclick={{action playerSelected player}}>
+    <div local-class="name">{{player.firstName}} {{player.lastName}}</div>
     <div local-class="pos">{{player.position}}</div>
-    <div local-class="team">{{player.teamName}}</div>
-    <div local-class="points">{{player.total_points}}</div>
+    <div local-class="team">{{player.team}}</div>
+    <div local-class="points">{{player.points}}</div>
   </button>
 </div>

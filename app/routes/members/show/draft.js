@@ -5,13 +5,13 @@ export default Ember.Route.extend({
 
   actions: {
     addPlayer(player) {
-      console.log("Add player: " + player.name);
+      const member = this.modelFor('members.show');
+      member.get('players').pushObject(player);
+      member.save();
     }
   },
 
   model() {
-    return fetch('http://localhost:8080/players').then(function(response) {
-      return response.json();
-    });
+    return this.get('store').findAll('player');
   }
 });

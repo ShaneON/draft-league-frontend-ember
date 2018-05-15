@@ -7,5 +7,13 @@ export default DS.JSONAPIAdapter.extend({
 
   urlForFindAll(){
     return `http://localhost:8080/members/`;
-  }
+  },
+
+  urlForCreateRecord() {
+    return `http://localhost:8080/members/`;
+  },
+
+  urlForUpdateRecord(id) {
+    return `http://localhost:8080/members/${id}`;
+  },
 });

@@ -1,0 +1,12 @@
+{{log player}}
+<div local-class="confirm-selection">
+  <h1 local-class="message">
+    Are you sure you want to add {{player.firstName}} {{player.lastName}} to your team?
+  </h1>
+  <button local-class="add" onclick={{action addPlayer player}}>
+    Add player
+  </button>
+  <button local-class="cancel" onclick={{action cancel}}>
+    Cancel
+  </button>
+</div>

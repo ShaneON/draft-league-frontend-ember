@@ -3,6 +3,15 @@
     title=navTitle}}
   {{draft-content
     players=players
-    addPlayer=addPlayer}}
+    playerSelected=(action "showAddPlayerModal")}}
   {{!page-footer}}
 </div>
+{{#if isShowingAddPlayerModal}}
+  {{#modal-dialog
+    clickOutsideToClose=true}}
+    {{confirm-selection
+      player=selectedPlayer
+      cancel=(action (mut isShowingAddPlayerModal) false)
+      addPlayer=(queue (action addPlayer) (action (mut isShowingAddPlayerModal) false))}}
+  {{/modal-dialog}}
+{{/if}}
