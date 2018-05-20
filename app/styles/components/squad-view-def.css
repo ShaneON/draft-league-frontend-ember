@@ -1,0 +1,19 @@
+.squad-view-def {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.def-starting {
+  font-size: 12px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-image {
+  width: 25px;;
+
+}

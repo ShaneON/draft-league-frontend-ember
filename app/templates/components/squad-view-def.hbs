@@ -1,0 +1,15 @@
+<div local-class="squad-view-def">
+  {{#each def as |def|}}
+    {{#if def.isStarting}}
+      <div local-class="def-starting">
+        <img src="/assets/images/player.png" local-class="player-image">
+        {{def.name}}
+      </div>
+    {{else}}
+      {{!-- <div local-class="def-starting">
+        <img src="/assets/images/player.png" local-class="player-image">
+        {{def.name}}
+      </div> --}}
+    {{/if}}
+  {{/each}}
+</div>

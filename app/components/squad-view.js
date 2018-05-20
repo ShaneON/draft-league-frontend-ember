@@ -1,5 +1,114 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  squad: []
+  gk: [
+    {
+      "name": "Cech",
+      "pos": "GK",
+      "team": "ARS",
+      "points": "202",
+      "isStarting": true
+    },
+    {
+      "name": "Ederson",
+      "pos": "GK",
+      "team": "MC",
+      "points": "134",
+      "isStarting": false
+    },
+  ],
+  
+  mid: [
+    {
+      "name": "Hazard",
+      "pos": "MID",
+      "team": "CHE",
+      "points": "100",
+      "isStarting": true
+    },
+    {
+      "name": "Herrera",
+      "pos": "MID",
+      "team": "MUN",
+      "points": "130",
+      "isStarting": true
+    },
+    {
+      "name": "lingard",
+      "pos": "MID",
+      "team": "MUN",
+      "points": "130",
+      "isStarting": true
+    },
+    {
+      "name": "blah",
+      "pos": "MID",
+      "team": "MUN",
+      "points": "130",
+      "isStarting": true
+    },
+    {
+      "name": "mangan",
+      "pos": "MID",
+      "team": "MUN",
+      "points": "130",
+      "isStarting": false
+    },
+  ],
+  
+  def: [
+    {
+      "name": "terry",
+      "pos": "DEF",
+      "team": "CHE",
+      "points": "202",
+      "isStarting": true
+    },
+    {
+      "name": "cahill",
+      "pos": "DEF",
+      "team": "CHE",
+      "points": "202",
+      "isStarting": true
+    },
+    {
+      "name": "button",
+      "pos": "DEF",
+      "team": "CHE",
+      "points": "202",
+      "isStarting": true
+    },
+    {
+      "name": "bailly",
+      "pos": "DEF",
+      "team": "MUN",
+      "points": "202",
+      "isStarting": true
+    },
+  ],
+
+  st: [
+    {
+      "name": "Costa",
+      "pos": "ST",
+      "team": "CHE",
+      "points": "202",
+      "isStarting": true
+    },
+    {
+      "name": "Lukaku",
+      "pos": "ST",
+      "team": "MUN",
+      "points": "252",
+      "isStarting": true
+    },
+    {
+      "name": "Aguero",
+      "pos": "ST",
+      "team": "MC",
+      "points": "232",
+      "isStarting": false
+    },
+  ],
+
 });
