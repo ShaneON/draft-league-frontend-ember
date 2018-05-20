@@ -20,9 +20,9 @@ export default Ember.Route.extend({
   },
 
   model() {
-    return Ember.RSVP.hash({
-      players: this.get('store').findAll('player'),
-      member: this.modelFor('member.show')
-    });
+    // return Ember.RSVP.hash({
+    //   players: this.get('store').findAll('player'),
+    //   member: this.modelFor('member.show')
+    // });
   }
 });
