@@ -1,8 +1,8 @@
 .squad-view-gk {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 30px;
 }
 
 .gk-starting {

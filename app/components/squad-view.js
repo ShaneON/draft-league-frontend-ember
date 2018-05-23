@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: '',
   gk: [
     {
       "name": "Cech",
@@ -17,7 +18,7 @@ export default Ember.Component.extend({
       "isStarting": false
     },
   ],
-  
+
   mid: [
     {
       "name": "Hazard",
@@ -55,7 +56,7 @@ export default Ember.Component.extend({
       "isStarting": false
     },
   ],
-  
+
   def: [
     {
       "name": "terry",
