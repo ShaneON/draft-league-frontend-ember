@@ -1,4 +1,5 @@
 .draft-content {
+  overflow: auto;
   display: flex;
   justify-content: center;
 }

@@ -1,15 +1,10 @@
 <div local-class="squad-view-mid">
   {{#each mid as |mid|}}
     {{#if mid.isStarting}}
-      <div local-class="mid-starting">
+      <div local-class="mid">
         <img src="/assets/images/player.png" local-class="player-image">
         {{mid.name}}
       </div>
-    {{else}}
-      {{!-- <div local-class="mid-benched">
-        <img src="/assets/images/player.png" local-class="player-image">
-        {{mid.name}}
-      </div> --}}
     {{/if}}
   {{/each}}
 </div>

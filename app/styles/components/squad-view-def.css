@@ -5,7 +5,7 @@
   flex-direction: row;
 }
 
-.def-starting {
+.def {
   font-size: 12px;
   min-width: 30px;
   display: flex;

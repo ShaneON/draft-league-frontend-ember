@@ -1,15 +1,10 @@
 <div local-class="squad-view-gk">
   {{#each gk as |gk|}}
     {{#if gk.isStarting}}
-      <div local-class="gk-starting">
+      <div local-class="gk">
         <img src="/assets/images/player.png" local-class="player-image">
         {{gk.name}}
       </div>
-    {{else}}
-      {{!-- <div local-class="gk-benched">
-        <img src="/assets/images/player.png" local-class="player-image">
-        {{gk.name}}
-      </div> --}}
     {{/if}}
   {{/each}}
 </div>
