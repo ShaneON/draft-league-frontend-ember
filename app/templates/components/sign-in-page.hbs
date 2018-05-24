@@ -1,0 +1,29 @@
+<div local-class="sign-in-page">
+  <h1 local-class="title">
+    Login
+  </h1>
+  <div local-class="email">
+    <h2 local-class="email-label">
+      Email
+    </h2>
+    {{input
+      placeholder='Enter email'
+      value=email
+      type="email"
+      local-class="email-input"}}
+  </div>
+  <div local-class="password">
+    <h2 local-class="password-label">
+      Password
+    </h2>
+    {{input
+      placeholder='Enter password'
+      value=password
+      type="password"
+      local-class="password-input"}}
+  </div>
+  <button local-class="login-button"
+    onclick={{action "loginClicked"}}>
+    Login
+  </button>
+</div>
