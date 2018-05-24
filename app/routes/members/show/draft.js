@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import isStarting from '../../../utils/is-starting';
 
 export default Ember.Route.extend({
   ajax: Ember.inject.service(),
