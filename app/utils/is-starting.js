@@ -1,26 +1,42 @@
-export default function isStarting(member) {
+export default function isStarting(member, player) {
+  let playersInPosition;
+  let blah = blah();
   switch(player.pos) {
     case 'GK':
-      return _checkStartingStatus(member, 1, 'GK');
+      playersInPosition = member.players.filter(p => p.pos === 'GK');
+      if (playersInPosition.length < 1) {
+        return true;
+      }
+      else {
+        return false;
+      }
       break;
     case 'DEF':
-      return _checkStartingStatus(member, 4, 'DEF');
+      playersInPosition = member.players.filter(p => p.pos === 'DEF');
+      if (playersInPosition.length < 4) {
+        return true;
+      }
+      else {
+        return false;
+      }
       break;
     case 'MID':
-      return _checkStartingStatus(member, 4, 'MID');
+      playersInPosition = member.players.filter(p => p.pos === 'MID');
+      if (playersInPosition.length < 4) {
+        return true;
+      }
+      else {
+        return false;
+      }
       break;
     case 'ST':
-      return _checkStartingStatus(member, 2, 'ST');
+      playersInPosition = member.players.filter(p => p.pos === 'ST');
+      if (playersInPosition.length < 2) {
+        return true;
+      }
+      else {
+        return false;
+      }
       break;
-  }
-}
-
-function checkStartingStatus(member, num, pos) {
-  let playersInPosition = member.players.filter(p => p.pos === pos);
-  if (playersInPosition.length <= num) {
-    return true;
-  }
-  else {
-    return false;
   }
 }

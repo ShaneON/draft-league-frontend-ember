@@ -7,5 +7,9 @@ export default DS.JSONAPIAdapter.extend({
 
   urlForFindAll(){
     return `http://localhost:8080/players/`;
+  },
+
+  urlForUpdateRecord(id){
+    return `http://localhost:8080/players/${id}`;
   }
 });
