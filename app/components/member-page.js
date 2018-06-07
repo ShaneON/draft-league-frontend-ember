@@ -2,6 +2,5 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: '',
-  playerSelected: () => {},
-  playersSwitched: () => {}
+  navTitle: Ember.computed.alias('member.name')
 });

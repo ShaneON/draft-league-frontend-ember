@@ -1,6 +1,5 @@
 export default function isStarting(member, player) {
   let playersInPosition;
-  let blah = blah();
   switch(player.pos) {
     case 'GK':
       playersInPosition = member.players.filter(p => p.pos === 'GK');

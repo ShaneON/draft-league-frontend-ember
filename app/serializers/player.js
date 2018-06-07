@@ -18,7 +18,8 @@ export default DS.JSONSerializer.extend({
       lastName: payload.second_name,
       team: payload.teamName,
       position: payload.position,
-      points: payload.total_points
+      points: payload.total_points,
+      isStarting: payload.is_starting
     };
   }
 });
