@@ -1,6 +1,5 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
-  tagName: '',
+export default Ember.Controller.extend({
   navTitle: Ember.computed.alias('member.name')
 });
