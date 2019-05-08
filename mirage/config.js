@@ -25,6 +25,87 @@ export default function() {
                 points: 1,
                 isStarting: true
               },
+              {
+                id: 3,
+                firstName: 'Bram',
+                lastName: 'Stoker',
+                team: 'Chelsea',
+                position: 'MID',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 4,
+                firstName: 'Mark',
+                lastName: 'Overmars',
+                team: 'Barca',
+                position: 'MID',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 5,
+                firstName: 'Luis',
+                lastName: 'Figo',
+                team: 'Chelsea',
+                position: 'MID',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 6,
+                firstName: 'Paul',
+                lastName: 'Pogba',
+                team: 'Barca',
+                position: 'MID',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 7,
+                firstName: 'Paul',
+                lastName: 'Stoker',
+                team: 'Chelsea',
+                position: 'DEF',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 8,
+                firstName: 'Peter',
+                lastName: 'Overmars',
+                team: 'Barca',
+                position: 'DEF',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 9,
+                firstName: 'Luigi',
+                lastName: 'Figo',
+                team: 'Chelsea',
+                position: 'DEF',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 10,
+                firstName: 'Foo',
+                lastName: 'Pogba',
+                team: 'Barca',
+                position: 'DEF',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 11,
+                firstName: 'Petr',
+                lastName: 'Cech',
+                team: 'Barca',
+                position: 'GK',
+                points: 1,
+                isStarting: true
+              },
             ]
           }
   });
