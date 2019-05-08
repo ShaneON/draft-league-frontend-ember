@@ -9,47 +9,47 @@
       <div local-class="pitch">
         <img src="/assets/images/pitch.png" local-class="pitch-image">
       </div>
-      <div local-class="squad-view">
-        <div local-class="squad-view-gk">
+      <div local-class="squad-container">
+        <div local-class="position-gk">
           {{#each gk as |gk|}}
             {{#if gk.isStarting}}
-              <div local-class="gk">
+              <div local-class="player-icon">
                 <img src="/assets/images/player.png" local-class="player-image">
                 {{gk.name}}
               </div>
             {{/if}}
           {{/each}}
         </div>
-      <div local-class="squad-view-def">
-          {{#each def as |def|}}
-            {{#if def.isStarting}}
-              <div local-class="def">
-                <img src="/assets/images/player.png" local-class="player-image">
-                {{def.name}}
-              </div>
-            {{/if}}
-          {{/each}}
-        </div>
-        <div local-class="squad-view-mid">
-          {{#each mid as |mid|}}
-            {{#if mid.isStarting}}
-              <div local-class="mid">
-                <img src="/assets/images/player.png" local-class="player-image">
-                {{mid.name}}
-              </div>
-            {{/if}}
-          {{/each}}
-        </div>
-        <div local-class="squad-view-st">
-          {{#each st as |st|}}
-            {{#if st.isStarting}}
-              <div local-class="st">
-                <img src="/assets/images/player.png" local-class="player-image">
-                {{st.name}}
-              </div>
-            {{/if}}
-          {{/each}}
-        </div>
+        <div local-class="position">
+            {{#each def as |def|}}
+              {{#if def.isStarting}}
+                <div local-class="player-icon">
+                  <img src="/assets/images/player.png" local-class="player-image">
+                  {{def.name}}
+                </div>
+              {{/if}}
+            {{/each}}
+          </div>
+          <div local-class="position">
+            {{#each mid as |mid|}}
+              {{#if mid.isStarting}}
+                <div local-class="player-icon">
+                  <img src="/assets/images/player.png" local-class="player-image">
+                  {{mid.name}}
+                </div>
+              {{/if}}
+            {{/each}}
+          </div>
+          <div local-class="position">
+            {{#each st as |st|}}
+              {{#if st.isStarting}}
+                <div local-class="player-icon">
+                  <img src="/assets/images/player.png" local-class="player-image">
+                  {{st.name}}
+                </div>
+              {{/if}}
+            {{/each}}
+          </div>
       </div>
     </div>
     {{bench-view

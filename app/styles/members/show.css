@@ -39,7 +39,7 @@
   position: absolute;
 }
 
-.squad-view {
+.squad-container {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -49,14 +49,14 @@
   height: 90%;
 }
 
-.squad-view-st {
+.position {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
-.st {
+.player-icon {
   width: 70px;
   font-size: 12px;
   min-width: 30px;
@@ -66,50 +66,12 @@
 }
 
 .player-image {
-  width: 25px;;
+  width: 25px;
 }
 
-.squad-view-mid {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.mid {
-  font-size: 12px;
-  min-width: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.squad-view-gk {
+.position-gk {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
-}
-
-.gk {
-  font-size: 12px;
-  min-width: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.squad-view-def {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.def {
-  font-size: 12px;
-  min-width: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
