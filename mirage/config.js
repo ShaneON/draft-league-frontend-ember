@@ -106,6 +106,51 @@ export default function() {
                 points: 1,
                 isStarting: true
               },
+              {
+                id: 12,
+                firstName: 'Paul',
+                lastName: 'Scholes',
+                team: 'Chelsea',
+                position: 'MID',
+                points: 1,
+                isStarting: false
+              },
+              {
+                id: 13,
+                firstName: 'Peter',
+                lastName: 'Parker',
+                team: 'Barca',
+                position: 'MID',
+                points: 1,
+                isStarting: false
+              },
+              {
+                id: 14,
+                firstName: 'Luigi',
+                lastName: 'Buffon',
+                team: 'Chelsea',
+                position: 'GK',
+                points: 1,
+                isStarting: false
+              },
+              {
+                id: 15,
+                firstName: 'Foo',
+                lastName: 'Fighters',
+                team: 'Barca',
+                position: 'DEF',
+                points: 1,
+                isStarting: false
+              },
+              {
+                id: 16,
+                firstName: 'Petr',
+                lastName: 'Pringle',
+                team: 'Barca',
+                position: 'DEF',
+                points: 1,
+                isStarting: false
+              },
             ]
           }
   });

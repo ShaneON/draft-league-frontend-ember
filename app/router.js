@@ -14,6 +14,7 @@ Router.map(function() {
       this.route('draft');
     });
   });
+  this.route('transfers');
 });
 
 export default Router;
