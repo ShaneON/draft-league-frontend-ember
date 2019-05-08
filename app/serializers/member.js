@@ -14,8 +14,9 @@ export default DS.JSONSerializer.extend({
   _toNormalisedPayload(payload) {
     return {
       id: payload.id,
-      name: payload.memberName,
+      name: payload.name,
       teamName: payload.teamName,
+      players: payload.players
     };
   }
 });

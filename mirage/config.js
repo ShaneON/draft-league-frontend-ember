@@ -1,6 +1,32 @@
 export default function() {
   this.get('http://localhost:8080/members', () => {
-    return [{ id: 1, name: 'Shane', teamName: 'Choi-FC-Choi'}]
+    return [{ id: 1, name: 'Shane', teamName: 'Choi-FC-Choi'},
+          { id: 2, name: 'Nez', teamName: 'Nuzh'}]
+  });
+
+  this.get('http://localhost:8080/members/:id', () => {
+    return { id: 1, name: 'Shane', teamName: 'Choi-FC-Choi',
+            players: [
+              {
+                id: 1,
+                firstName: 'Diego',
+                lastName: 'Costa',
+                team: 'Chelsea',
+                position: 'ST',
+                points: 1,
+                isStarting: true
+              },
+              {
+                id: 2,
+                firstName: 'Lionel',
+                lastName: 'Messi',
+                team: 'Barca',
+                position: 'ST',
+                points: 1,
+                isStarting: true
+              },
+            ]
+          }
   });
 
   // These comments are here to help you get started. Feel free to delete them.

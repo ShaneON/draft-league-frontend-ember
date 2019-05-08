@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   setupController(controller, model) {
-    this.set('member', model)
+    controller.set('member', model)
+    this._super(...arguments)
   },
 
   model(params) {

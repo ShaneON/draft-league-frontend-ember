@@ -1,2 +1,14 @@
-{{members-page
-  members=model}}
+<div local-class="members-page">
+  {{nav-bar
+    title="Members"}}
+  <div local-class="members-content">
+    {{#each model as |member|}}
+      <div local-class="member-card">
+        <h1 local-class="name">Name: {{member.name}}</h1>
+        <h2 local-class="team-name">Team Name: {{member.teamName}}</h2>
+        <!-- <h2 local-class="points">Points: {{member.points}}</h2> -->
+      </div>
+    {{/each}}
+  </div>
+
+</div>
