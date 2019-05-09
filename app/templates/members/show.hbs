@@ -11,49 +11,61 @@
       </div>
       <div local-class="squad-container">
         <div local-class="position-gk">
-          {{#each gk as |gk|}}
-            {{#if gk.isStarting}}
-              <div local-class="player-icon">
+          {{#each positionGk as |player|}}
+            {{#if player.isStarting}}
+              <div onclick={{action "playerSelected" player}} local-class="player-icon">
                 <img src="/assets/images/player.png" local-class="player-image">
-                {{gk.firstName}} {{gk.lastName}}
+                {{player.firstName}} {{player.lastName}}
               </div>
             {{/if}}
           {{/each}}
         </div>
         <div local-class="position">
-            {{#each def as |def|}}
-              {{#if def.isStarting}}
-                <div local-class="player-icon">
+            {{#each positionDef as |player|}}
+              {{#if player.isStarting}}
+                <div onclick={{action "playerSelected" player}} local-class="player-icon">
                   <img src="/assets/images/player.png" local-class="player-image">
-                  {{def.firstName}} {{def.lastName}}
+                  {{player.firstName}} {{player.lastName}}
                 </div>
               {{/if}}
             {{/each}}
           </div>
           <div local-class="position">
-            {{#each mid as |mid|}}
-              {{#if mid.isStarting}}
-                <div local-class="player-icon">
+            {{#each positionMid as |player|}}
+              {{#if player.isStarting}}
+                <div onclick={{action "playerSelected" player}} local-class="player-icon">
                   <img src="/assets/images/player.png" local-class="player-image">
-                  {{mid.firstName}} {{mid.lastName}}
+                  {{player.firstName}} {{player.lastName}}
                 </div>
               {{/if}}
             {{/each}}
           </div>
           <div local-class="position">
-            {{#each st as |st|}}
-              {{#if st.isStarting}}
-                <div local-class="player-icon">
+            {{#each positionSt as |player|}}
+              {{#if player.isStarting}}
+                <div onclick={{action "playerSelected" player}} local-class="player-icon">
                   <img src="/assets/images/player.png" local-class="player-image">
-                  {{st.firstName}} {{st.lastName}} 
+                  {{player.firstName}} {{player.lastName}}
                 </div>
               {{/if}}
             {{/each}}
           </div>
       </div>
     </div>
-    {{bench-view
-      member=model
-      playerSelected=removePlayer}}
+    <div local-class="bench-view">
+      {{#each benched as |player|}}
+        {{#if (eq player.position 'GK')}}
+          <div onclick={{action "playerSelected" player}} local-class="player-icon">
+            <img src="/assets/images/player.png" local-class="player-image">
+            {{player.firstName}} {{player.lastName}}
+          </div>
+        {{else}}
+          <div onclick={{action "playerSelected" player}} local-class="player-icon">
+            <img src="/assets/images/player.png" local-class="player-image">
+            {{player.firstName}} {{player.lastName}}
+          </div>
+        {{/if}}
+      {{/each}}
+    </div>
   </div>
 </div>

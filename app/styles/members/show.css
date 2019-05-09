@@ -75,3 +75,12 @@
   justify-content: center;
   flex-direction: row;
 }
+
+.bench-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 75px;
+  background-color: #6e9be5;
+}
